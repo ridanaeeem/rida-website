@@ -10,7 +10,7 @@ export default function Home() {
 			<Nav></Nav>
 			<div className="flex flex-col justify-center text-center m-5">
 				<div className="mx-auto p-10">
-					<Image className="text-center rounded-full" src={profile} alt="Rida Naeem" width={150} />
+					<Image className="text-center rounded-full" src={profile} alt="Rida Naeem" width={200} />
 				</div>
 				<div className="font-mono text-5xl">
 					Hi! My name is <span className="text-[#538243]">Rida</span>
@@ -37,7 +37,7 @@ export default function Home() {
 					<br></br>
 					<br></br>
 					<div className="hover-underline-animation">
-						<Link href="/">Find out more about me outside of work and school here.</Link>
+						<Link href="/about">Find out more about me outside of work and school here.</Link>
 					</div>
 				</div>
 			</div>

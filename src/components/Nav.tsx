@@ -8,13 +8,13 @@ export default function Nav() {
 				<Link href="/">Home</Link>
 			</div>
 			<div className="flex justify-end">
-				<Link className="rightNav" href="/">
+				<Link className="rightNav" href="/education">
 					Education
 				</Link>
-				<Link className="rightNav" href="/">
+				<Link className="rightNav" href="/experiences">
 					Experiences
 				</Link>
-				<Link className="rightNav" href="/">
+				<Link className="rightNav" href="/projects">
 					Projects
 				</Link>
 			</div>
