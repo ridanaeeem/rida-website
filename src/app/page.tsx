@@ -3,6 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import profile from "@/media/profile.jpeg";
 import Nav from "@/components/Nav";
+import Footer from "@/components/Footer";
 
 export default function Home() {
 	return (
@@ -41,6 +42,7 @@ export default function Home() {
 					</div>
 				</div>
 			</div>
+			<Footer></Footer>
 		</div>
 	);
 }
