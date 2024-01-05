@@ -16,8 +16,8 @@ export default function Home() {
 					Hi! My name is <span className="text-[#538243]">Rida</span>
 				</div>
 				<div className="m-10 text-xl">
-					& Welcome to my website! I am a graduating senior currently pursuing my Bachelor's in Neuroscience
-					with a minor in Computer Science at Boston University. My{" "}
+					& Welcome to my website! I am a graduating senior currently pursuing my Bachelor&apos;s in
+					Neuroscience with a minor in Computer Science at Boston University. My{" "}
 					<div className="hover-underline-animation">
 						<Link href="/">academic journey</Link>
 					</div>{" "}
