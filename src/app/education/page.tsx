@@ -26,6 +26,10 @@ export default function Education() {
 						neuroscience and neural network modeling of learning behaviors. Additionally, I have learned
 						fundamental concepts of Computer Science in my programming and data structures classes, and I
 						have also had the opportunity to apply these concepts in my software development courses.
+						Furthermore, I have been involved in several on-campus organizations aiming to create a
+						supportive community for various underrpreresented and marginalized communities in STEM. I
+						strongly value these initiatives where I can support my peers who are facing similar struggles
+						that I once did.
 					</div>
 					<br></br>
 					<div className="flex justify-between text-2xl text-[#538243]">
