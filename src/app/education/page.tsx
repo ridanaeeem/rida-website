@@ -12,9 +12,9 @@ export default function Home() {
 			<Nav></Nav>
 			<div className="flex flex-col justify-center m-5">
 				<div className="flex flex-row mx-auto p-10">
-					<Image className="mx-2 rounded-full" src={boston1} alt="Rida Naeem" width={200} />
-					<Image className="mx-2 rounded-full" src={boston2} alt="Rida Naeem" width={200} />
-					<Image className="mx-2 rounded-full" src={boston3} alt="Rida Naeem" width={200} />
+					<Image className="mx-2 rounded-full" src={boston1} alt="BU's mascot bench" width={200} />
+					<Image className="mx-2 rounded-full" src={boston2} alt="Central BU" width={200} />
+					<Image className="mx-2 rounded-full" src={boston3} alt="View of the Charles from BU" width={200} />
 				</div>
 				<div className="font-mono text-5xl text-[#538243] text-center">Educational History</div>
 				<div className="m-10 text-xl">

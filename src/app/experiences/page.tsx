@@ -12,9 +12,19 @@ export default function Home() {
 			<Nav></Nav>
 			<div className="flex flex-col justify-center m-5">
 				<div className="flex flex-row mx-auto p-10">
-					<Image className="mx-2 rounded-full" src={work1} alt="Rida Naeem" width={200} />
-					<Image className="mx-2 rounded-full" src={work2} alt="Rida Naeem" width={200} />
-					<Image className="mx-2 rounded-full" src={work3} alt="Rida Naeem" width={200} />
+					<Image
+						className="mx-2 rounded-full"
+						src={work1}
+						alt="Mouse branes sliced via cryostat and mounted on microscope slide"
+						width={200}
+					/>
+					<Image className="mx-2 rounded-full" src={work2} alt="Dissected fruit fly brain" width={200} />
+					<Image
+						className="mx-2 rounded-full"
+						src={work3}
+						alt="Code used to analyze mouse fear behaviors in R"
+						width={200}
+					/>
 				</div>
 				<div className="font-mono text-5xl text-[#538243] text-center">Work & Leadership Experiences</div>
 				<div className="m-10 text-xl">
