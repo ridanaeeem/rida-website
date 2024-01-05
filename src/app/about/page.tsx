@@ -13,7 +13,11 @@ export default function Home() {
 					<Image className="text-center rounded-full" src={profile} alt="Rida Naeem" width={200} />
 				</div>
 				<div className="font-mono text-5xl text-[#538243]">A little bit about me...</div>
-				<div className="m-10 text-xl">rida</div>
+				<div className="m-10 text-xl">
+					Outside of my academics and work, I really enjoy finding opportunities to embrace my creative side,
+					whether that be through playing the guitar, taking photos, or painting! I also enjoy bouldering and
+					skateboarding in my free time. Check out some of my work below!
+				</div>
 			</div>
 		</div>
 	);
