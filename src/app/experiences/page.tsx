@@ -2,11 +2,12 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import Nav from "@/components/Nav";
+import Footer from "@/components/Footer";
 import work1 from "@/media/work1.png";
 import work2 from "@/media/work2.png";
 import work3 from "@/media/work3.png";
 
-export default function Home() {
+export default function Experiences() {
 	return (
 		<div>
 			<Nav></Nav>
@@ -70,6 +71,7 @@ export default function Home() {
 					</div>
 				</div>
 			</div>
+			<Footer></Footer>
 		</div>
 	);
 }

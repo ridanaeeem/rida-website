@@ -3,8 +3,9 @@ import Link from "next/link";
 import Image from "next/image";
 import profile from "@/media/profile.jpeg";
 import Nav from "@/components/Nav";
+import Footer from "@/components/Footer";
 
-export default function Home() {
+export default function About() {
 	return (
 		<div>
 			<Nav></Nav>
@@ -19,6 +20,7 @@ export default function Home() {
 					skateboarding in my free time. Check out some of my work below!
 				</div>
 			</div>
+			<Footer></Footer>
 		</div>
 	);
 }

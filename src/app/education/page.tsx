@@ -2,11 +2,12 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import Nav from "@/components/Nav";
+import Footer from "@/components/Footer";
 import boston1 from "@/media/boston1.png";
 import boston2 from "@/media/boston2.png";
 import boston3 from "@/media/boston3.png";
 
-export default function Home() {
+export default function Education() {
 	return (
 		<div>
 			<Nav></Nav>
@@ -60,6 +61,7 @@ export default function Home() {
 					</div>
 				</div>
 			</div>
+			<Footer></Footer>
 		</div>
 	);
 }
