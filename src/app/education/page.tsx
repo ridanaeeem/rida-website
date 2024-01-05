@@ -24,7 +24,8 @@ export default function Education() {
 						avenues in the field of Neuroscience, as well as its intersection with the broad field of
 						Computer Science. I have had the opportunity to combine the two in my study of computational
 						neuroscience and neural network modeling of learning behaviors. Additionally, I have learned
-						fundamental concepts and in Computer Science in my programming and software development courses.
+						fundamental concepts of Computer Science in my programming and data structures classes, and I
+						have also had the opportunity to apply these concepts in my software development courses.
 					</div>
 					<br></br>
 					<div className="flex justify-between text-2xl text-[#538243]">
@@ -59,6 +60,47 @@ export default function Education() {
 							<li>Physics</li>
 						</ul>
 					</div>
+					<br></br>
+					<div className="text-2xl text-[#538243]">On-Campus Involvement</div>
+
+					<div className="flex justify-between text-2xl text-[#538243]">
+						<div>PR Coordinator | Women in Neuroscience </div>
+						<div>Dec 2020 - present</div>
+					</div>
+					<ul className="">
+						<li>
+							Organize and promote club events, including mentorship matching between undergraduate and
+							graduate students and general body meetings{" "}
+						</li>
+						<li>
+							Maintain club’s social media presence and communicate with other clubs to plan joint events{" "}
+						</li>
+					</ul>
+					<br></br>
+
+					<div className="flex justify-between text-2xl text-[#538243]">
+						<div>Wizards Volunteer Tutor | Boston University Community Service Center</div>
+						<div>Dec 2020 - May 2021</div>
+					</div>
+					<ul className="">
+						<li>
+							Created lesson plans and videos explaining various scientific topics through experimentation
+							for local elementary, middle, and high schools with other tutors weekly
+						</li>
+					</ul>
+					<br></br>
+
+					<div className="flex justify-between text-2xl text-[#538243]">
+						<div>Blog Writer | Leading Women Tomorrow</div>
+						<div>Sep 2020 - May 2021</div>
+					</div>
+					<ul className="">
+						<li>
+							Wrote for the nonprofit’s Boston University chapter about women and minorities in STEM being
+							affected by impostor syndrome{" "}
+						</li>
+					</ul>
+					<br></br>
 				</div>
 			</div>
 			<Footer></Footer>
