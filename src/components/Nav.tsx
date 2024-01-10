@@ -3,21 +3,16 @@ import Link from "next/link";
 
 export default function Nav() {
 	return (
-		<nav className="flex justify-between text-xl">
-			<div className="flex justify-start">
-				<Link href="/">Home</Link>
-			</div>
-			<div className="flex justify-end">
-				<Link className="rightNav" href="/education">
-					Education
-				</Link>
-				<Link className="rightNav" href="/experiences">
-					Experiences
-				</Link>
-				<Link className="rightNav" href="/projects">
-					Projects
-				</Link>
-			</div>
+		<nav className="flex flex-col justify-between text-xl">
+			<Link className="" href="#education">
+				Education
+			</Link>
+			<Link className="" href="#experiences">
+				Experiences
+			</Link>
+			<Link className="" href="#projects">
+				Projects
+			</Link>
 		</nav>
 	);
 }

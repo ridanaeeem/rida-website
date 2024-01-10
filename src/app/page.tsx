@@ -4,45 +4,70 @@ import Image from "next/image";
 import profile from "@/media/profile.jpeg";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
+import Education from "@/components/Education";
+import Experiences from "@/components/Experiences";
+import Projects from "@/components/Projects";
 
 export default function Home() {
 	return (
 		<div>
-			<Nav></Nav>
-			<div className="flex flex-col justify-center text-center m-5">
-				<div className="mx-auto p-10">
-					<Image className="text-center rounded-full" src={profile} alt="Rida Naeem" width={200} />
+			<div className="flex m-10">
+				<div className="w-2/5 fixed">
+					<Link href="/">
+						<div className="box text-[9rem]">Rida Naeem</div>
+					</Link>
+					<div className="m-2">
+						<Nav></Nav>
+						<br></br>
+						<Footer></Footer>
+						<div className="mx-auto p-10">
+							{/* <Image className="text-center rounded-full" src={profile} alt="Rida Naeem" width={200} />  */}
+						</div>
+					</div>
 				</div>
-				<div className="font-mono text-5xl">
-					Hi! My name is <span className="text-[#538243]">Rida</span>
-				</div>
-				<div className="m-10 text-xl">
-					& welcome to my website! I am a graduating senior currently pursuing my Bachelor&apos;s in
-					Neuroscience with a minor in Computer Science at Boston University. My{" "}
-					<div className="hover-underline-animation">
-						<Link href="/">academic journey</Link>
-					</div>{" "}
-					has equipped me with a robust analytical mindset, and my{" "}
-					<div className="hover-underline-animation">
-						<Link href="/">work</Link>
-					</div>{" "}
-					as a Research Assistant has allowed me to gain experience in data analysis and modeling for a deeper
-					understanding of the brain. My coursework in computer science complements this, providing a deeper
-					understanding of algorithms and computational thinking. Beyond academics, my{" "}
-					<div className="hover-underline-animation">
-						<Link href="/">projects</Link>
-					</div>{" "}
-					showcase skills in software development and UI/UX design. Eager to contribute to cutting-edge
-					software engineering and data analysis, I am excited about leveraging my interdisciplinary
-					background to infuse creativity and analytical rigor into impactful projects in these domains.
-					<br></br>
-					<br></br>
-					<div className="hover-underline-animation">
-						<Link href="/about">Find out more about me outside of work and school here.</Link>
+
+				<div className="w-2/5"></div>
+
+				<div className="w-3/5 relative ml-10">
+					<div className="flex flex-col justify-center text-left">
+						<div className="text-lg absolute top-0 mt-5">
+							Welcome to my website! I'm a graduating senior pursuing my Bachelor&apos;s in Neuroscience
+							with a minor in Computer Science at Boston University. Scroll through to learn more about my{" "}
+							<div className="hover-underline-animation">
+								<Link href="#education">education</Link>
+							</div>
+							,{" "}
+							<div className="hover-underline-animation">
+								<Link href="#experiences">experience</Link>
+							</div>
+							, and{" "}
+							<div className="hover-underline-animation">
+								<Link href="#projects">projects!</Link>
+							</div>
+							<br></br>
+							<br></br>
+							Outside of my academics and work, I really enjoy finding opportunities to embrace my
+							creative side, whether that be through playing the guitar, taking photos, or painting! I
+							also enjoy bouldering and skateboarding in my free time. Check out some of my work{" "}
+							<div className="hover-underline-animation">
+								<Link href="/">here</Link>
+							</div>
+							, if you'd like!
+							<br></br>
+							<br></br>
+						</div>
+						<div id="education">
+							<Education></Education>
+						</div>
+						<div id="experiences">
+							<Experiences></Experiences>
+						</div>
+						<div id="projects">
+							<Projects></Projects>
+						</div>
 					</div>
 				</div>
 			</div>
-			<Footer></Footer>
 		</div>
 	);
 }
