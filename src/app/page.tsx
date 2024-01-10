@@ -31,8 +31,9 @@ export default function Home() {
 				<div className="w-3/5 relative ml-10">
 					<div className="flex flex-col justify-center text-left">
 						<div className="text-lg absolute top-0 mt-5">
-							Welcome to my website! I'm a graduating senior pursuing my Bachelor&apos;s in Neuroscience
-							with a minor in Computer Science at Boston University. Scroll through to learn more about my{" "}
+							Welcome to my website! I&apos;m a graduating senior pursuing my Bachelor&apos;s in
+							Neuroscience with a minor in Computer Science at Boston University. Scroll through to learn
+							more about my{" "}
 							<div className="hover-underline-animation">
 								<Link href="#education">education</Link>
 							</div>
@@ -52,7 +53,7 @@ export default function Home() {
 							<div className="hover-underline-animation">
 								<Link href="/">here</Link>
 							</div>
-							, if you'd like!
+							, if you&apos;d like!
 							<br></br>
 							<br></br>
 						</div>
