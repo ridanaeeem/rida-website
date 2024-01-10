@@ -27,7 +27,16 @@ export default function Projects() {
 							</div>
 							<div className="card w-1/2 pr-5 py-5">
 								{/* <img src="https://i.imgur.com/4m5rrSe.png" /> */}
-								MongoDB, Express, React, Node, HTML, CSS, JavaScript, OAuth
+								<ul>
+									<li>MongoDB</li>
+									<li>Express</li>
+									<li>React</li>
+									<li>Node</li>
+									<li>HTML</li>
+									<li>CSS</li>
+									<li>JavaScript</li>
+									<li>OAuth</li>
+								</ul>
 							</div>
 						</div>
 						<div className="description">
@@ -64,7 +73,15 @@ export default function Projects() {
 							<div className="card w-1/2 pr-5 py-5">
 								<img src="https://imgur.com/H3GKCys.png" />
 							</div>
-							<div className="card w-1/2 pr-5 py-5">HTML, CSS, JavaScript, React, Next.js</div>
+							<div className="card w-1/2 pr-5 py-5">
+								<ul>
+									<li>HTML</li>
+									<li>CSS</li>
+									<li>JavaScript</li>
+									<li>React</li>
+									<li>Next.js</li>
+								</ul>
+							</div>
 						</div>
 						<div className="description">
 							<ul>
@@ -98,7 +115,16 @@ export default function Projects() {
 							<div className="card w-1/2 pr-5 py-5">
 								<img src="https://imgur.com/SVc3RYv.png" />
 							</div>
-							<div className="card w-1/2 pr-5 py-5">MongoDB, HTML, CSS, JavaScript, React, Next.js</div>
+							<div className="card w-1/2 pr-5 py-5">
+								<ul>
+									<li>MongoDB</li>
+									<li>HTML</li>
+									<li>CSS</li>
+									<li>JavaScript</li>
+									<li>React</li>
+									<li>Next.js</li>
+								</ul>
+							</div>
 						</div>
 						<div className="description">
 							<ul>
@@ -134,7 +160,13 @@ export default function Projects() {
 								<img src="https://imgur.com/fTnicVJ.png" />
 							</div>
 							<div className="card w-1/2 pr-5 py-5">
-								MATLAB, Mean-Field Modeling, Neural Networks, Data Analysis, Scientific Design
+								<ul>
+									<li>MATLAB</li>
+									<li>Mean-Field Modeling</li>
+									<li>Neural Networks</li>
+									<li>Data Analysis</li>
+									<li>Scientific Design</li>
+								</ul>
 							</div>
 						</div>
 						<div className="description">
