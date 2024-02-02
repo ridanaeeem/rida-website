@@ -14,6 +14,7 @@ const config: Config = {
 			},
 			colors: {
 				emphasis: "#8fb684",
+				trnsparent: "transparent",
 			},
 		},
 	},

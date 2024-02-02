@@ -11,10 +11,10 @@ import Projects from "@/components/Projects";
 export default function Home() {
 	return (
 		<div>
-			<div className="flex m-10">
-				<div className="w-2/5 fixed">
+			<div className="flex flex-col m-10 md:flex-row">
+				<div className="fixed flex md:w-2/5 md:flex md:flex-col">
 					<Link href="/">
-						<div className="box text-[9rem]">Rida Naeem</div>
+						<div className="box ridaname">Rida Naeem</div>
 					</Link>
 					<div className="m-2">
 						<Nav></Nav>
@@ -26,10 +26,9 @@ export default function Home() {
 					</div>
 				</div>
 
-				<div className="w-2/5"></div>
-
-				<div className="w-3/5 relative ml-10">
-					<div className="flex flex-col justify-center text-left">
+				<div className="w-full relative md:ml-10 md:mt-0 flex flex-col md:flex-row">
+					<div className="md:w-2/5 h-80"></div>
+					<div className="flex flex-col justify-center text-left md:w-3/5">
 						<div className="text-lg absolute top-0 mt-5">
 							Welcome to my website! I&apos;m a graduating senior pursuing my Bachelor&apos;s in
 							Neuroscience with a minor in Computer Science at Boston University. Scroll through to learn

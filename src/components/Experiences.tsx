@@ -9,9 +9,9 @@ export default function Experiences() {
 	return (
 		<div>
 			<div className="flex flex-col justify-center">
-				<div className="box text-[5rem] text-center py-5">Experiences</div>
+				<div className="box subheading text-center py-5">Experiences</div>
 				<div className="flex flex-row mx-auto my-10">
-					<Image
+					{/* <Image
 						className="mx-2 rounded-full"
 						src={work1}
 						alt="Mouse branes sliced via cryostat and mounted on microscope slide"
@@ -23,7 +23,7 @@ export default function Experiences() {
 						src={work3}
 						alt="Code used to analyze mouse fear behaviors in R"
 						width={200}
-					/>
+					/> */}
 				</div>
 				<div className="">
 					<div>

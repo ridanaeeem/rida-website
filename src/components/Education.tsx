@@ -1,5 +1,4 @@
 import React from "react";
-import Link from "next/link";
 import Image from "next/image";
 import boston1 from "@/media/boston1.png";
 import boston2 from "@/media/boston2.png";
@@ -9,11 +8,11 @@ export default function Education() {
 	return (
 		<div>
 			<div className="flex flex-col justify-center">
-				<div className="box text-[5rem] text-center py-5">Education</div>
+				<div className="box subheading text-center py-5">Education</div>
 				<div className="flex flex-row mx-auto my-10">
-					<Image className="mx-2 rounded-full" src={boston1} alt="BU's mascot bench" width={200} />
+					{/* <Image className="mx-2 rounded-full" src={boston1} alt="BU's mascot bench" width={200} />
 					<Image className="mx-2 rounded-full" src={boston2} alt="Central BU" width={200} />
-					<Image className="mx-2 rounded-full" src={boston3} alt="View of the Charles from BU" width={200} />
+					<Image className="mx-2 rounded-full" src={boston3} alt="View of the Charles from BU" width={200} /> */}
 				</div>
 				<div className="">
 					<div>
@@ -36,7 +35,10 @@ export default function Education() {
 						<div className="text-emphasis">Relevant Coursework</div>
 					</div>
 					<ul className="">
-						<li>Data Structures, Software Engineering, Web Application Development</li>
+						<li>
+							Data Structures, Software Engineering, Web Application Development, Introduction to
+							Artifical Intelligence
+						</li>
 						<li>Discrete Math, Linear Algebra, Multivariate Calculus, Differential Equations</li>
 						<li>
 							MATLAB Programming for Research, Computational Models of Brain and Behavior, Principles and

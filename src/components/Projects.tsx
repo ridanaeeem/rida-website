@@ -9,7 +9,7 @@ export default function Projects() {
 				{/* <div className="mx-auto p-10">
 					<Image className="text-center rounded-full" src={profile} alt="Rida Naeem" width={150} />
 				</div> */}
-				<div className="box text-[5rem] text-center py-5">Projects</div>
+				<div className="box subheading text-center py-5">Projects</div>
 				<div className="flex flex-wrap">
 					<div>
 						<div className="text-emphasis">
