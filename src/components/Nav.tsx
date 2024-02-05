@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 
-const NavLink = ({ heading }) => {
+const NavLink = (heading: any) => {
 	return (
 		<Link className="" href={`#${heading.toLowerCase()}`}>
 			{heading}
