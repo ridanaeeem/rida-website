@@ -1,18 +1,20 @@
 import React from "react";
 import Link from "next/link";
 
+const NavLink = ({ heading }) => {
+	return (
+		<Link className="" href={`#${heading.toLowerCase()}`}>
+			{heading}
+		</Link>
+	);
+};
+
 export default function Nav() {
 	return (
 		<nav className="flex flex-col justify-between text-xl">
-			<Link className="" href="#education">
-				Education
-			</Link>
-			<Link className="" href="#experiences">
-				Experiences
-			</Link>
-			<Link className="" href="#projects">
-				Projects
-			</Link>
+			<NavLink heading="Education"></NavLink>
+			<NavLink heading="Experiences"></NavLink>
+			<NavLink heading="Projects"></NavLink>
 		</nav>
 	);
 }

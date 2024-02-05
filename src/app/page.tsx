@@ -12,7 +12,7 @@ export default function Home() {
 	return (
 		<div>
 			<div className="flex flex-col m-10 md:flex-row">
-				<div className="fixed flex md:w-2/5 md:flex md:flex-col">
+				<div className="flex z-10 md:fixed md:w-2/5 md:flex md:flex-col">
 					<Link href="/">
 						<div className="box ridaname">Rida Naeem</div>
 					</Link>
