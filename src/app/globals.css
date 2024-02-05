@@ -17,7 +17,7 @@ body {
 * {
 	/* font-family: "Verdana", "sans-serif";  */
 	font-family: "DejaVu Sans Mono", monospace;
-	font-size: calc(10px + 0.5vw);
+	font-size: calc(10px + 0.9vw);
 	list-style-type: circle;
 	list-style-position: inside;
 	color: white;

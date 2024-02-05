@@ -29,7 +29,7 @@ export default function Home() {
 				<div className="w-full relative md:ml-10 md:mt-0 flex flex-col md:flex-row">
 					<div className="md:w-2/5 h-80"></div>
 					<div className="flex flex-col justify-center text-left md:w-3/5">
-						<div className="text-lg absolute top-0 mt-5">
+						<div className="absolute top-0 mt-5">
 							Welcome to my website! I&apos;m a graduating senior pursuing my Bachelor&apos;s in
 							Neuroscience with a minor in Computer Science at Boston University. Scroll through to learn
 							more about my{" "}
