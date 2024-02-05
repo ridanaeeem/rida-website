@@ -1,7 +1,11 @@
 import React from "react";
 import Link from "next/link";
 
-const NavLink = (heading: any) => {
+interface NavLinkProps {
+	heading: string;
+}
+
+const NavLink: React.FC<NavLinkProps> = ({ heading }) => {
 	return (
 		<Link className="" href={`#${heading.toLowerCase()}`}>
 			{heading}
