@@ -1,19 +1,14 @@
 import React from "react";
 import Link from "next/link";
 
-interface NavLinkProps {
-	heading: string;
-}
-
-const NavLink: React.FC<NavLinkProps> = ({ heading }) => {
-	return (
-		<Link className="" href={`#${heading.toLowerCase()}`}>
-			{heading}
-		</Link>
-	);
-};
-
 export default function Nav() {
+	const NavLink = ({ heading }: { heading: string }) => {
+		return (
+			<Link className="" href={`#${heading.toLowerCase()}`}>
+				{heading}
+			</Link>
+		);
+	};
 	return (
 		<nav className="flex flex-col justify-between text-xl">
 			<NavLink heading="Education"></NavLink>

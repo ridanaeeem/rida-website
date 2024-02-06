@@ -30,9 +30,8 @@ export default function Home() {
 					<div className="md:w-2/5 h-80"></div>
 					<div className="flex flex-col justify-center text-left md:w-3/5">
 						<div className="absolute top-0 mt-5">
-							Welcome to my website! I&apos;m a graduating senior pursuing my Bachelor&apos;s in
-							Neuroscience with a minor in Computer Science at Boston University. Scroll through to learn
-							more about my{" "}
+							Welcome to my website! I&apos;m a graduating senior studying Neuroscience and Computer
+							Science at Boston University. Scroll through to learn more about my{" "}
 							<div className="hover-underline-animation">
 								<Link href="#education">education</Link>
 							</div>
@@ -47,12 +46,13 @@ export default function Home() {
 							<br></br>
 							<br></br>
 							Outside of my academics and work, I really enjoy finding opportunities to embrace my
-							creative side, whether that be through playing the guitar, taking photos, or painting! I
-							also enjoy bouldering and skateboarding in my free time. Check out some of my work{" "}
+							creative side, whether that be through playing the guitar, taking photos, or painting!
+							{/* I also enjoy bouldering and skateboarding in my free time. */}
+							{/* Check out some of my work{" "}
 							<div className="hover-underline-animation">
 								<Link href="/">here</Link>
 							</div>
-							, if you&apos;d like!
+							, if you&apos;d like! */}
 							<br></br>
 							<br></br>
 						</div>
