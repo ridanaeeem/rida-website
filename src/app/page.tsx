@@ -11,29 +11,30 @@ import Experiences from "@/components/Experiences";
 import Projects from "@/components/Projects";
 
 export default function Home() {
-	// source: https://dev.to/jmalvarez/check-if-an-element-is-visible-with-react-hooks-27h8
-	function useIsVisible(ref) {
-  		const [isIntersecting, setIntersecting] = useState(false);
-		useEffect(() => {
-			const observer = new IntersectionObserver(([entry]) =>
-				setIntersecting(entry.isIntersecting)
-			);
-			observer.observe(ref.current);
-			return () => {
-				observer.disconnect();
-			};
-		}, [ref]);
-		return isIntersecting;
-	}
+    // Define useIsVisible hook
+    function useIsVisible(ref: React.RefObject<HTMLDivElement>) {
+        const [isIntersecting, setIntersecting] = useState(false);
+        useEffect(() => {
+            const observer = new IntersectionObserver(([entry]) =>
+                setIntersecting(entry.isIntersecting)
+            );
+            observer.observe(ref.current!);
+            return () => {
+                observer.disconnect();
+            };
+        }, [ref]);
+        return isIntersecting;
+    }
 
-	//
-  	const educationRef = useRef();
-  	const experiencesRef = useRef();
-  	const projectsRef = useRef();
+    // Create ref objects
+    const educationRef = useRef<HTMLDivElement>(null);
+    const experiencesRef = useRef<HTMLDivElement>(null);
+    const projectsRef = useRef<HTMLDivElement>(null);
 
-	const eduVisible = useIsVisible(educationRef);
-	const expVisible = useIsVisible(experiencesRef);
-	const projVisible = useIsVisible(projectsRef);
+    // Call useIsVisible hook with appropriate refs
+    const eduVisible = useIsVisible(educationRef);
+    const expVisible = useIsVisible(experiencesRef);
+    const projVisible = useIsVisible(projectsRef);
 
 	let highlightNav = "";
 	if (projVisible)
