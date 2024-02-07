@@ -5,12 +5,20 @@ import Image from "next/image";
 export default function Projects() {
 	const SkillList = ({ skills }: { skills: Array<String> }) => {
 		return (
-			<ul>
+			<ul className="flex flex-wrap">
 				{skills.map((skill, index) => (
-					<li key={index}>{skill}</li>
+					<li
+						className="list-none text-center border-solid border-2 border-mgreen px-[1rem] m-[0.25rem] rounded-xl bg-mgreen text-[#B8F2A8]"
+						key={index}>
+						{skill}
+					</li>
 				))}
 			</ul>
 		);
+	};
+
+	const ProjectCard = ({ skills }: { skills: Array<String> }) => {
+		return <SkillList skills={skills} />;
 	};
 
 	return (
@@ -32,11 +40,11 @@ export default function Projects() {
 								(Github)
 							</a>
 						</div>
-						<div className="flex">
+						<div className="">
 							<div className="card w-1/2 pr-5 py-5">
 								<img src="https://i.imgur.com/UZyEUdg.png" />
 							</div>
-							<div className="card w-1/2 pr-5 py-5">
+							<div className="card">
 								{/* <img src="https://i.imgur.com/4m5rrSe.png" /> */}
 								<SkillList skills={["MongoDB", "Express", "React", "Node", "Oauth"]} />
 							</div>

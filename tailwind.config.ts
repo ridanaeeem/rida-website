@@ -14,7 +14,11 @@ const config: Config = {
 			},
 			colors: {
 				emphasis: "#8fb684",
-				trnsparent: "transparent",
+				transparent: "transparent",
+				white: "#FFFFFF",
+				gray: "#B7B7B7",
+				dgreen: "#1E231C",
+				mgreen: "#323B2F",
 			},
 		},
 	},
