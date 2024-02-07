@@ -3,6 +3,16 @@ import Link from "next/link";
 import Image from "next/image";
 
 export default function Projects() {
+	const SkillList = ({ skills }: { skills: Array<String> }) => {
+		return (
+			<ul>
+				{skills.map((skill, index) => (
+					<li key={index}>{skill}</li>
+				))}
+			</ul>
+		);
+	};
+
 	return (
 		<div>
 			<div className="flex flex-col justify-center">
@@ -17,7 +27,8 @@ export default function Projects() {
 							<a
 								className="hover-underline-animation"
 								href="https://github.com/ridanaeeem/easier-recipe"
-								target="_blank">
+								target="_blank"
+								rel="noopener noreferrer">
 								(Github)
 							</a>
 						</div>
@@ -27,16 +38,7 @@ export default function Projects() {
 							</div>
 							<div className="card w-1/2 pr-5 py-5">
 								{/* <img src="https://i.imgur.com/4m5rrSe.png" /> */}
-								<ul>
-									<li>MongoDB</li>
-									<li>Express</li>
-									<li>React</li>
-									<li>Node</li>
-									<li>HTML</li>
-									<li>CSS</li>
-									<li>JavaScript</li>
-									<li>OAuth</li>
-								</ul>
+								<SkillList skills={["MongoDB", "Express", "React", "Node", "Oauth"]} />
 							</div>
 						</div>
 						<div className="description">
@@ -59,13 +61,15 @@ export default function Projects() {
 							<a
 								className="hover-underline-animation"
 								href="https://github.com/ridanaeeem/pikmin-progress-tracker"
-								target="_blank">
+								target="_blank"
+								rel="noopener noreferrer">
 								(Github)
 							</a>{" "}
 							<a
 								className="hover-underline-animation"
 								href="https://pikmin-progress-tracker.vercel.app/"
-								target="_blank">
+								target="_blank"
+								rel="noopener noreferrer">
 								(Deployment)
 							</a>
 						</div>
@@ -74,13 +78,7 @@ export default function Projects() {
 								<img src="https://imgur.com/H3GKCys.png" />
 							</div>
 							<div className="card w-1/2 pr-5 py-5">
-								<ul>
-									<li>HTML</li>
-									<li>CSS</li>
-									<li>JavaScript</li>
-									<li>React</li>
-									<li>Next.js</li>
-								</ul>
+								<SkillList skills={["React", "Next.js"]} />
 							</div>
 						</div>
 						<div className="description">
@@ -101,13 +99,15 @@ export default function Projects() {
 							<a
 								className="hover-underline-animation"
 								href="https://github.com/ridanaeeem/culinary-community"
-								target="_blank">
+								target="_blank"
+								rel="noopener noreferrer">
 								(Github)
 							</a>{" "}
 							<a
 								className="hover-underline-animation"
 								href="https://culinary-community.vercel.app/"
-								target="_blank">
+								target="_blank"
+								rel="noopener noreferrer">
 								(Deployment)
 							</a>
 						</div>
@@ -116,14 +116,7 @@ export default function Projects() {
 								<img src="https://imgur.com/SVc3RYv.png" />
 							</div>
 							<div className="card w-1/2 pr-5 py-5">
-								<ul>
-									<li>MongoDB</li>
-									<li>HTML</li>
-									<li>CSS</li>
-									<li>JavaScript</li>
-									<li>React</li>
-									<li>Next.js</li>
-								</ul>
+								<SkillList skills={["MongoDB", "React", "Next.js"]} />
 							</div>
 						</div>
 						<div className="description">
