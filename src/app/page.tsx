@@ -11,7 +11,7 @@ import Experiences from "@/components/Experiences";
 import Projects from "@/components/Projects";
 
 export default function Home() {
-    // Define useIsVisible hook
+    // source: https://dev.to/jmalvarez/check-if-an-element-is-visible-with-react-hooks-27h8
     function useIsVisible(ref: React.RefObject<HTMLDivElement>) {
         const [isIntersecting, setIntersecting] = useState(false);
         useEffect(() => {
@@ -26,16 +26,17 @@ export default function Home() {
         return isIntersecting;
     }
 
-    // Create ref objects
+    // Cceate ref objects
     const educationRef = useRef<HTMLDivElement>(null);
     const experiencesRef = useRef<HTMLDivElement>(null);
     const projectsRef = useRef<HTMLDivElement>(null);
 
-    // Call useIsVisible hook with appropriate refs
+    // Ccll useIsVisible hook with appropriate refs
     const eduVisible = useIsVisible(educationRef);
     const expVisible = useIsVisible(experiencesRef);
     const projVisible = useIsVisible(projectsRef);
 
+	// determine what section of page to highlight
 	let highlightNav = "";
 	if (projVisible)
 		highlightNav = "Projects";

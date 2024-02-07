@@ -5,7 +5,7 @@ export default function Nav( {highlightNav}: {highlightNav: string}) {
 	const NavLink = ({ heading }: { heading: string }) => {
 		return (
 			<Link className={highlightNav == heading ? "text-[#ffffff]" : "text-[#B7B7B7]"} href={`#${heading.toLowerCase()}`}>
-				{highlightNav == heading ? "--> " : null}
+				{highlightNav == heading ? "——— " : null}
 				{heading}
 			</Link>
 		);
