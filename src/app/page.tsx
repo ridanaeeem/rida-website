@@ -1,4 +1,6 @@
-import React from "react";
+"use client"
+
+import React, { useState, useEffect, useRef }  from "react";
 import Link from "next/link";
 import Image from "next/image";
 import profile from "@/media/profile.jpeg";
@@ -9,6 +11,38 @@ import Experiences from "@/components/Experiences";
 import Projects from "@/components/Projects";
 
 export default function Home() {
+	// source: https://dev.to/jmalvarez/check-if-an-element-is-visible-with-react-hooks-27h8
+	function useIsVisible(ref) {
+  		const [isIntersecting, setIntersecting] = useState(false);
+		useEffect(() => {
+			const observer = new IntersectionObserver(([entry]) =>
+				setIntersecting(entry.isIntersecting)
+			);
+			observer.observe(ref.current);
+			return () => {
+				observer.disconnect();
+			};
+		}, [ref]);
+		return isIntersecting;
+	}
+
+	//
+  	const educationRef = useRef();
+  	const experiencesRef = useRef();
+  	const projectsRef = useRef();
+
+	const eduVisible = useIsVisible(educationRef);
+	const expVisible = useIsVisible(experiencesRef);
+	const projVisible = useIsVisible(projectsRef);
+
+	let highlightNav = "";
+	if (projVisible)
+		highlightNav = "Projects";
+	else if (expVisible)
+		highlightNav = "Experiences";
+	else if (eduVisible)
+		highlightNav = "Education";
+
 	return (
 		<div>
 			<div className="flex flex-col m-10 md:flex-row">
@@ -17,7 +51,7 @@ export default function Home() {
 						<div className="box ridaname">Rida Naeem</div>
 					</Link>
 					<div className="m-2">
-						<Nav></Nav>
+						<Nav highlightNav={highlightNav}></Nav>
 						<br></br>
 						<Footer></Footer>
 						<div className="mx-auto p-10">
@@ -56,13 +90,13 @@ export default function Home() {
 							<br></br>
 							<br></br>
 						</div>
-						<div id="education">
+						<div id="education" ref={educationRef}>
 							<Education></Education>
 						</div>
-						<div id="experiences">
+						<div id="experiences" ref={experiencesRef}>
 							<Experiences></Experiences>
 						</div>
-						<div id="projects">
+						<div id="projects" ref={projectsRef}>
 							<Projects></Projects>
 						</div>
 					</div>

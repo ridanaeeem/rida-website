@@ -1,10 +1,11 @@
 import React from "react";
 import Link from "next/link";
 
-export default function Nav() {
+export default function Nav( {highlightNav}: {highlightNav: string}) {
 	const NavLink = ({ heading }: { heading: string }) => {
 		return (
-			<Link className="" href={`#${heading.toLowerCase()}`}>
+			<Link className={highlightNav == heading ? "text-[#ffffff]" : "text-[#B7B7B7]"} href={`#${heading.toLowerCase()}`}>
+				{highlightNav == heading ? "--> " : null}
 				{heading}
 			</Link>
 		);

@@ -26,13 +26,6 @@ export default function Experiences() {
 					/> */}
 				</div>
 				<div className="">
-					<div>
-						My degree has allowed me to gain a truly interdisplinary understanding of both Neuroscience and
-						Computer Science, with coursework ranging from biology, chemistry, and physics, to the
-						principles of computational modeling and computing.
-					</div>
-					<br></br>
-
 					<div className="flex justify-between">
 						<div className="text-emphasis">Undergraduate Research Assistant | Meyer Laboratory</div>
 						<div>Sep 2022 - present</div>
