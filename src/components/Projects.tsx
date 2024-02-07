@@ -153,13 +153,15 @@ export default function Projects() {
 								<img src="https://imgur.com/fTnicVJ.png" />
 							</div>
 							<div className="card w-1/2 pr-5 py-5">
-								<ul>
-									<li>MATLAB</li>
-									<li>Mean-Field Modeling</li>
-									<li>Neural Networks</li>
-									<li>Data Analysis</li>
-									<li>Scientific Design</li>
-								</ul>
+								<SkillList
+									skills={[
+										"MATLAB",
+										"Mean-Field Modeling",
+										"Neural Networks",
+										"Data Analysis",
+										"Scientific Design",
+									]}
+								/>
 							</div>
 						</div>
 						<div className="description">
