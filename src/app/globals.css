@@ -84,3 +84,20 @@ body {
 .subheading {
 	font-size: calc(20px + 5vw);
 }
+
+@media only screen and (max-width: 500px) {
+	.box {
+		color: var(--emphasis);
+		font-family: sans-serif;
+		line-height: 100%;
+		font-weight: bold;
+		/* background: repeating-radial-gradient(#000 0 0.0001%, #fff 0 0.0002%) 50% 0/2500px 2500px, */
+		/* repeating-conic-gradient(#000 0 0.0001%, #fff 0 0.0002%) 50% 50%/2500px 2500px; */
+		/* background: repeating-radial-gradient(#000 0 0.007%, #fff 0 0.00999999%) 50% 0/2500px 2500px, */
+		/* repeating-conic-gradient(#000 0 0.002%, #fff 0 0.004%) 50% 50%/2500px 2500px; */
+		background-blend-mode: difference;
+		mix-blend-mode: lighten;
+		-webkit-background-clip: text;
+		background-clip: text;
+	}
+}
