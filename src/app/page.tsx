@@ -42,7 +42,7 @@ export default function Home() {
 	return (
 		<div className="p-10">
 			<div className="flex flex-col md:flex-row">
-				<div className="flex z-10 py-8 pl-5 md:p-0 fixed top-0 md:top-auto left-0 md:left-auto bg-dddgreen md:bg-transparent w-full md:w-2/5 flex flex-col">
+				<div className="flex z-10 py-8 pl-5 md:p-0 fixed top-0 md:top-auto left-0 md:left-auto bg-[#1E231C] md:bg-transparent w-full md:w-2/5 flex flex-col">
 					<div className="flex justify-between pr-0">
 						<Link href="/">
 							<div className="box ridaname">Rida Naeem</div>

@@ -81,9 +81,9 @@ export default function Projects() {
 					role={"Full Stack Developer"}
 					githubRepo={"https://github.com/ridanaeeem/easier-recipe"}
 					deployment={null}
-					skills={["MongoDB", "Express", "React", "Node", "Oauth"]}
+					skills={["MongoDB", "Express", "React", "Node", "Oauth", "Redux"]}
 					description={[
-						"Designed and developed a MERN web application for virtual recipe storing and sharing with Google OAuth integration",
+						"Designed in Figma and proceeded to develop a MERN web application for virtual recipe storing and sharing with redux state management and Google OAuth integration",
 						"Implemented feature for seamless conversion between imperial and metric units",
 						"Integrated multiple recipe scraper APIs to enable URL-to-recipe functionality",
 					]}
@@ -100,7 +100,8 @@ export default function Projects() {
 					deployment={"https://pikmin-progress-tracker.vercel.app/"}
 					skills={["React", "TypeScript", "Next.js", "Tailwind"]}
 					description={[
-						"Created a React application using Next.js to track user progress in the mobile game Pikmin Bloom, implementing features for progress monitoring and data visualization",
+						"Created a React application using TypeScript and Next.js to locally track user progress in the mobile game Pikmin Bloom, with features for data visualization",
+						"Currently implementing SQL database storage and user sign-in for cross-device use",
 					]}
 					pic1={pikmin1}
 					pic1alt={"The home page of Pikmin Progress Tracker"}
@@ -113,9 +114,9 @@ export default function Projects() {
 					role={"Front-End Developer, UI/UX Designer"}
 					githubRepo={"https://github.com/ridanaeeem/culinary-community"}
 					deployment={"https://culinary-community.vercel.app/"}
-					skills={["MongoDB", "React", "Next.js"]}
+					skills={["MongoDB", "React", "TypeScript", "Next.js"]}
 					description={[
-						"Collaborated with a back-end developer to design and develop the front-end of a MERN web application, showcasing strong UI/UX design skills as part of BostonHacks project",
+						"Collaborated with a back-end developer to design and develop the front-end of a MERN web application, showcasing strong UI/UX design skills as part of a 24 hour BostonHacks project",
 					]}
 					pic1={culinary1}
 					pic1alt={"The home page of Culinary Community"}
