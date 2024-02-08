@@ -1,9 +1,8 @@
-"use client"
+"use client";
 
-import React, { useState, useEffect, useRef }  from "react";
+import React, { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import profile from "@/media/profile.jpeg";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import Education from "@/components/Education";
@@ -11,39 +10,34 @@ import Experiences from "@/components/Experiences";
 import Projects from "@/components/Projects";
 
 export default function Home() {
-    // source: https://dev.to/jmalvarez/check-if-an-element-is-visible-with-react-hooks-27h8
-    function useIsVisible(ref: React.RefObject<HTMLDivElement>) {
-        const [isIntersecting, setIntersecting] = useState(false);
-        useEffect(() => {
-            const observer = new IntersectionObserver(([entry]) =>
-                setIntersecting(entry.isIntersecting)
-            );
-            observer.observe(ref.current!);
-            return () => {
-                observer.disconnect();
-            };
-        }, [ref]);
-        return isIntersecting;
-    }
+	// source: https://dev.to/jmalvarez/check-if-an-element-is-visible-with-react-hooks-27h8
+	function useIsVisible(ref: React.RefObject<HTMLDivElement>) {
+		const [isIntersecting, setIntersecting] = useState(false);
+		useEffect(() => {
+			const observer = new IntersectionObserver(([entry]) => setIntersecting(entry.isIntersecting));
+			observer.observe(ref.current!);
+			return () => {
+				observer.disconnect();
+			};
+		}, [ref]);
+		return isIntersecting;
+	}
 
-    // Cceate ref objects
-    const educationRef = useRef<HTMLDivElement>(null);
-    const experiencesRef = useRef<HTMLDivElement>(null);
-    const projectsRef = useRef<HTMLDivElement>(null);
+	// Cceate ref objects
+	const educationRef = useRef<HTMLDivElement>(null);
+	const experiencesRef = useRef<HTMLDivElement>(null);
+	const projectsRef = useRef<HTMLDivElement>(null);
 
-    // Ccll useIsVisible hook with appropriate refs
-    const eduVisible = useIsVisible(educationRef);
-    const expVisible = useIsVisible(experiencesRef);
-    const projVisible = useIsVisible(projectsRef);
+	// Ccll useIsVisible hook with appropriate refs
+	const eduVisible = useIsVisible(educationRef);
+	const expVisible = useIsVisible(experiencesRef);
+	const projVisible = useIsVisible(projectsRef);
 
 	// determine what section of page to highlight
 	let highlightNav = "";
-	if (projVisible)
-		highlightNav = "Projects";
-	else if (expVisible)
-		highlightNav = "Experiences";
-	else if (eduVisible)
-		highlightNav = "Education";
+	if (projVisible) highlightNav = "Projects";
+	else if (expVisible) highlightNav = "Experiences";
+	else if (eduVisible) highlightNav = "Education";
 
 	return (
 		<div>

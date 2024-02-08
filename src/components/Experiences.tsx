@@ -1,30 +1,12 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import work1 from "@/media/work1.png";
-import work2 from "@/media/work2.png";
-import work3 from "@/media/work3.png";
 
 export default function Experiences() {
 	return (
 		<div>
 			<div className="flex flex-col justify-center">
 				<div className="box subheading text-center py-5">Experiences</div>
-				<div className="flex flex-row mx-auto my-10">
-					{/* <Image
-						className="mx-2 rounded-full"
-						src={work1}
-						alt="Mouse branes sliced via cryostat and mounted on microscope slide"
-						width={200}
-					/>
-					<Image className="mx-2 rounded-full" src={work2} alt="Dissected fruit fly brain" width={200} />
-					<Image
-						className="mx-2 rounded-full"
-						src={work3}
-						alt="Code used to analyze mouse fear behaviors in R"
-						width={200}
-					/> */}
-				</div>
 				<div className="">
 					<div className="flex justify-between">
 						<div className="text-emphasis">Undergraduate Research Assistant | Meyer Laboratory</div>

@@ -1,6 +1,14 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
+import easier1 from "/public/easierrecipe1.png";
+import easier2 from "/public/easierrecipe2.png";
+import culinary1 from "/public/culinarycommunity1.png";
+import culinary2 from "/public/culinarycommunity2.png";
+import pikmin1 from "/public/pikminprogress1.png";
+import pikmin2 from "/public/pikminprogress2.png";
+import fig1 from "/public/neural1.png";
+import fig2 from "/public/neural2.png";
 
 export default function Projects() {
 	const SkillList = ({ skills }: { skills: Array<String> }) => {
@@ -24,7 +32,8 @@ export default function Projects() {
 		deployment,
 		skills,
 		description,
-		pic,
+		pic1,
+		pic2,
 	}: {
 		title: string;
 		role: string;
@@ -32,7 +41,8 @@ export default function Projects() {
 		deployment: string | null;
 		skills: Array<string>;
 		description: Array<string>;
-		pic: string;
+		pic1: StaticImageData;
+		pic2: StaticImageData;
 	}) => {
 		return (
 			<div className="border-transparent border-2 p-4 hover:bg-gradient-radial from-black to-ddgreen hover:border-ddgreen rounded-xl">
@@ -43,8 +53,8 @@ export default function Projects() {
 					</div>
 					<SkillList skills={skills} />
 					<div className="flex justify-between my-2">
-						<img className="w-1/2 mr-1" src={pic} />
-						<img className="w-1/2 ml-1" src={pic} />
+						<Image width={2000} height={2000} className="w-1/2 mr-1" src={pic1} />
+						<Image width={2000} height={2000} className="w-1/2 ml-1" src={pic2} />
 					</div>
 					<ul className="flex flex-wrap">
 						{description.map((item, index) => (
@@ -73,7 +83,8 @@ export default function Projects() {
 						"Implemented feature for seamless conversion between imperial and metric units",
 						"Integrated multiple recipe scraper APIs to enable URL-to-recipe functionality",
 					]}
-					pic={"https://i.imgur.com/UZyEUdg.png"}
+					pic1={easier1}
+					pic2={easier2}
 				/>
 
 				<ProjectCard
@@ -85,7 +96,8 @@ export default function Projects() {
 					description={[
 						"Created a React application using Next.js to track user progress in the mobile game Pikmin Bloom, implementing features for progress monitoring and data visualization",
 					]}
-					pic={"https://i.imgur.com/UZyEUdg.png"}
+					pic1={pikmin1}
+					pic2={pikmin2}
 				/>
 
 				<ProjectCard
@@ -97,20 +109,22 @@ export default function Projects() {
 					description={[
 						"Collaborated with a back-end developer to design and develop the front-end of a MERN web application, showcasing strong UI/UX design skills as part of BostonHacks project",
 					]}
-					pic={"https://i.imgur.com/UZyEUdg.png"}
+					pic1={culinary1}
+					pic2={culinary2}
 				/>
 
 				<ProjectCard
 					title={"Neural Modeling Projects"}
 					role={"Computational Neuroscience"}
-					githubRepo={"https://github.com/ridanaeeem/culinary-community"}
-					deployment={"https://culinary-community.vercel.app/"}
+					githubRepo={""}
+					deployment={""}
 					skills={["MATLAB", "Mean-Field Modeling", "Neural Networks", "Data Analysis", "Scientific Design"]}
 					description={[
 						"Modeled changes in neuron voltage in MATLAB and Python using the Hodgin-Huxley, leaky integrate-and-fire, shunting, outstar, and instar equations/models",
 						"Produced final project evaluating existing fear conditioning neural network and mean-field models, modifying them to account for sex differences in amygdala activity",
 					]}
-					pic={"https://imgur.com/fTnicVJ.png"}
+					pic1={fig1}
+					pic2={fig2}
 				/>
 			</div>
 		</div>

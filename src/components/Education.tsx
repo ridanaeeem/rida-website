@@ -1,19 +1,11 @@
 import React from "react";
 import Image from "next/image";
-import boston1 from "@/media/boston1.png";
-import boston2 from "@/media/boston2.png";
-import boston3 from "@/media/boston3.png";
 
 export default function Education() {
 	return (
 		<div>
 			<div className="flex flex-col justify-center">
 				<div className="box subheading text-center py-5">Education</div>
-				<div className="flex flex-row mx-auto my-10">
-					{/* <Image className="mx-2 rounded-full" src={boston1} alt="BU's mascot bench" width={200} />
-					<Image className="mx-2 rounded-full" src={boston2} alt="Central BU" width={200} />
-					<Image className="mx-2 rounded-full" src={boston3} alt="View of the Charles from BU" width={200} /> */}
-				</div>
 				<div className="">
 					<div>
 						My degree has allowed me to gain a truly interdisplinary understanding of both Neuroscience and
