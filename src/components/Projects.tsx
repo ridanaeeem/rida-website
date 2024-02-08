@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import easier1 from "/public/easierrecipe1.png";
 import easier2 from "/public/easierrecipe2.png";
 import culinary1 from "/public/culinarycommunity1.png";
@@ -33,7 +33,9 @@ export default function Projects() {
 		skills,
 		description,
 		pic1,
+		pic1alt,
 		pic2,
+		pic2alt,
 	}: {
 		title: string;
 		role: string;
@@ -42,7 +44,9 @@ export default function Projects() {
 		skills: Array<string>;
 		description: Array<string>;
 		pic1: StaticImageData;
+		pic1alt: string;
 		pic2: StaticImageData;
+		pic2alt: string;
 	}) => {
 		return (
 			<div className="border-transparent border-2 p-4 hover:bg-gradient-radial from-black to-ddgreen hover:border-ddgreen rounded-xl">
@@ -53,8 +57,8 @@ export default function Projects() {
 					</div>
 					<SkillList skills={skills} />
 					<div className="flex justify-between my-2">
-						<Image width={2000} height={2000} className="w-1/2 mr-1" src={pic1} />
-						<Image width={2000} height={2000} className="w-1/2 ml-1" src={pic2} />
+						<Image width={2000} height={2000} className="w-1/2 mr-1" src={pic1} alt={pic1alt} />
+						<Image width={2000} height={2000} className="w-1/2 ml-1" src={pic2} alt={pic2alt} />
 					</div>
 					<ul className="flex flex-wrap">
 						{description.map((item, index) => (
@@ -84,7 +88,9 @@ export default function Projects() {
 						"Integrated multiple recipe scraper APIs to enable URL-to-recipe functionality",
 					]}
 					pic1={easier1}
+					pic1alt={"The home page of Easier Recipe"}
 					pic2={easier2}
+					pic2alt={"The main recipe page of Easier Recipe"}
 				/>
 
 				<ProjectCard
@@ -97,7 +103,9 @@ export default function Projects() {
 						"Created a React application using Next.js to track user progress in the mobile game Pikmin Bloom, implementing features for progress monitoring and data visualization",
 					]}
 					pic1={pikmin1}
+					pic1alt={"The home page of Pikmin Progress Tracker"}
 					pic2={pikmin2}
+					pic2alt={"The home page of Pikmin Progress Tracker with some pikmin selected"}
 				/>
 
 				<ProjectCard
@@ -110,7 +118,9 @@ export default function Projects() {
 						"Collaborated with a back-end developer to design and develop the front-end of a MERN web application, showcasing strong UI/UX design skills as part of BostonHacks project",
 					]}
 					pic1={culinary1}
+					pic1alt={"The home page of Culinary Community"}
 					pic2={culinary2}
+					pic2alt={"The recipes page of Culinary Community"}
 				/>
 
 				<ProjectCard
@@ -124,7 +134,13 @@ export default function Projects() {
 						"Produced final project evaluating existing fear conditioning neural network and mean-field models, modifying them to account for sex differences in amygdala activity",
 					]}
 					pic1={fig1}
+					pic1alt={
+						"The normalized activity of neurons in a recurrent neural network with a specified signal function, visualized as a 2D plot"
+					}
 					pic2={fig2}
+					pic2alt={
+						"The normalized activity of neurons in a recurrent neural network with a specified signal function, visualized as a surface plot"
+					}
 				/>
 			</div>
 		</div>
