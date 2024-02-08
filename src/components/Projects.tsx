@@ -1,6 +1,5 @@
 import React from "react";
-import Link from "next/link";
-import Image, { StaticImageData } from "next/image";
+import ProjectCard from "./ProjectCard";
 import easier1 from "/public/easierrecipe1.png";
 import easier2 from "/public/easierrecipe2.png";
 import culinary1 from "/public/culinarycommunity1.png";
@@ -11,67 +10,6 @@ import fig1 from "/public/neural1.png";
 import fig2 from "/public/neural2.png";
 
 export default function Projects() {
-	const SkillList = ({ skills }: { skills: Array<String> }) => {
-		return (
-			<ul className="flex flex-wrap mb-2">
-				{skills.map((skill, index) => (
-					<li
-						className="list-none text-sm text-center border-solid border-2 border-mgreen px-[1rem] m-[0.25rem] rounded-xl bg-mgreen text-bgreen"
-						key={index}>
-						{skill}
-					</li>
-				))}
-			</ul>
-		);
-	};
-
-	const ProjectCard = ({
-		title,
-		role,
-		githubRepo,
-		deployment,
-		skills,
-		description,
-		pic1,
-		pic1alt,
-		pic2,
-		pic2alt,
-	}: {
-		title: string;
-		role: string;
-		githubRepo: string;
-		deployment: string | null;
-		skills: Array<string>;
-		description: Array<string>;
-		pic1: StaticImageData;
-		pic1alt: string;
-		pic2: StaticImageData;
-		pic2alt: string;
-	}) => {
-		return (
-			<div className="border-transparent border-2 p-4 hover:bg-gradient-radial from-black to-dgreen hover:border-dgreen rounded-xl">
-				<a href={deployment ? deployment : githubRepo} target="_blank" rel="noopener noreferrer">
-					<div className="text-emphasis text-xl">
-						{title}
-						<div className="">{role}</div>
-					</div>
-					<SkillList skills={skills} />
-					<div className="flex justify-between my-2">
-						<Image width={2000} height={2000} className="w-1/2 mr-1" src={pic1} alt={pic1alt} />
-						<Image width={2000} height={2000} className="w-1/2 ml-1" src={pic2} alt={pic2alt} />
-					</div>
-					<ul className="flex flex-wrap">
-						{description.map((item, index) => (
-							<li className="" key={index}>
-								{item}
-							</li>
-						))}
-					</ul>
-				</a>
-			</div>
-		);
-	};
-
 	return (
 		<div>
 			<div className="flex flex-col justify-center">
