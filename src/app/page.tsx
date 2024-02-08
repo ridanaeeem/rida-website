@@ -40,26 +40,32 @@ export default function Home() {
 	else if (eduVisible) highlightNav = "Education";
 
 	return (
-		<div>
-			<div className="flex flex-col m-10 md:flex-row">
-				<div className="flex z-10 md:fixed md:w-2/5 flex flex-col">
-					<Link href="/">
-						<div className="box ridaname">Rida Naeem</div>
-					</Link>
-					<div className="m-2">
-						<Nav highlightNav={highlightNav}></Nav>
-						<br></br>
-						<Footer></Footer>
-						<div className="mx-auto p-10">
-							{/* <Image className="text-center rounded-full" src={profile} alt="Rida Naeem" width={200} />  */}
+		<div className="p-10">
+			<div className="flex flex-col md:flex-row">
+				<div className="flex z-10 py-8 pl-5 md:p-0 fixed top-0 md:top-auto left-0 md:left-auto bg-dddgreen md:bg-transparent w-full md:w-2/5 flex flex-col">
+					<div className="flex justify-between pr-0">
+						<Link href="/">
+							<div className="box ridaname">Rida Naeem</div>
+						</Link>
+						<div className="md:hidden">
+							<Footer></Footer>
+						</div>
+					</div>
+					<div className="md:m-1 mt-3">
+						<div className="flex justify-between">
+							<Nav highlightNav={highlightNav}></Nav>
+
+							<div className="hidden md:block flex md:text-xl md:fixed md:bottom-20">
+								<Footer></Footer>
+							</div>
 						</div>
 					</div>
 				</div>
 
-				<div className="w-full relative md:ml-10 md:mt-0 flex flex-col md:flex-row">
+				<div className="md:m-0 w-full relative md:ml-10 md:mt-0 flex flex-col md:flex-row">
 					<div className="md:w-2/5 h-80"></div>
 					<div className="flex flex-col justify-center text-left md:w-3/5">
-						<div className="absolute top-0 mt-5">
+						<div className="absolute top-0 mt-40 md:mt-5">
 							Welcome to my website! I&apos;m a graduating senior studying Neuroscience and Computer
 							Science at Boston University. Scroll through to learn more about my{" "}
 							<div className="hover-underline-animation">

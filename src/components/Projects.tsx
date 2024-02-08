@@ -49,7 +49,7 @@ export default function Projects() {
 		pic2alt: string;
 	}) => {
 		return (
-			<div className="border-transparent border-2 p-4 hover:bg-gradient-radial from-black to-ddgreen hover:border-ddgreen rounded-xl">
+			<div className="border-transparent border-2 p-4 hover:bg-gradient-radial from-black to-dgreen hover:border-dgreen rounded-xl">
 				<a href={deployment ? deployment : githubRepo} target="_blank" rel="noopener noreferrer">
 					<div className="text-emphasis text-xl">
 						{title}

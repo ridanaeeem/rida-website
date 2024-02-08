@@ -85,7 +85,7 @@ body {
 	font-size: calc(20px + 5vw);
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 767px) {
 	.box {
 		color: var(--emphasis);
 		font-family: sans-serif;
@@ -101,7 +101,12 @@ body {
 		background-clip: text; */
 	}
 
+	.ridaname {
+		font-size: calc(20px + 5vw);
+		color: #b8f2a8;
+	}
+
 	#education {
-		margin-top: 20vh;
+		margin-top: 22vh;
 	}
 }

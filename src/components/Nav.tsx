@@ -5,7 +5,7 @@ export default function Nav({ highlightNav }: { highlightNav: string }) {
 	const NavLink = ({ heading }: { heading: string }) => {
 		return (
 			<Link
-				className={`hover:text-white ${highlightNav == heading ? "text-white" : "text-gray"}`}
+				className={`hover:text-white pr-5 md:p-0 ${highlightNav == heading ? "text-white" : "text-gray"}`}
 				href={`#${heading.toLowerCase()}`}>
 				{highlightNav == heading ? "——— " : null}
 				{heading}
@@ -13,7 +13,7 @@ export default function Nav({ highlightNav }: { highlightNav: string }) {
 		);
 	};
 	return (
-		<nav className="flex flex-col justify-between text-xl">
+		<nav className="flex md:flex-col justify-between text-xl">
 			<NavLink heading="Education"></NavLink>
 			<NavLink heading="Experiences"></NavLink>
 			<NavLink heading="Projects"></NavLink>
