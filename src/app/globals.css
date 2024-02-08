@@ -100,4 +100,8 @@ body {
 		-webkit-background-clip: text;
 		background-clip: text; */
 	}
+
+	#education {
+		margin-top: 20vh;
+	}
 }
