@@ -2,7 +2,6 @@ import React from "react";
 import Image, { StaticImageData } from "next/image";
 import linkedIn from "/public/linkedInLogo.png";
 import gitHub from "/public/gitHubLogo.png";
-import resume from "/public/rnaeemResumeFeb24pdf";
 
 export default function Footer() {
 	return (
