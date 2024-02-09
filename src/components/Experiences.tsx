@@ -17,10 +17,15 @@ export default function Experiences() {
 						skills={["Python", "R", "Jupyter Notebook", "Programming", "Data Analysis"]}
 						description={[
 							"Work with DeepLabCut (Python, deep learning model) to collect data on freezing behaviors",
-							"Write scripts in MedState Notation for mice fear conditioning experiments",
 							"Score hundreds of videos of mice in elevated plus maze, recording freezing and analyzing subsequent data in Microsoft Excel and R",
 							"Handle mice during fear-conditioning and perform wet lab experiments, using a cryostat and vibratome to slice and mount mouse brains",
 						]}
+						// description={[
+						// 	"Work with DeepLabCut (Python, deep learning model) to collect data on freezing behaviors",
+						// 	"Write scripts in MedState Notation for mice fear conditioning experiments",
+						// 	"Score hundreds of videos of mice in elevated plus maze, recording freezing and analyzing subsequent data in Microsoft Excel and R",
+						// 	"Handle mice during fear-conditioning and perform wet lab experiments, using a cryostat and vibratome to slice and mount mouse brains",
+						// ]}
 					/>
 					<ExperienceCard
 						job={"Peer Tutor & Training Leader"}
