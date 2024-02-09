@@ -37,28 +37,15 @@ export default function Education() {
 							Methods of Neural Modeling, Neuroscience Arduino Modeling Lab
 						</li>
 					</ul>
-					<br></br>
-					<div className="">
+
+					{/* <div className="">
 						Furthermore, I have been involved in several on-campus organizations aiming to create a
 						supportive community for various underrpreresented and marginalized communities in STEM. I
 						strongly value these initiatives where I can support my peers who are facing similar struggles
 						that I have.
-					</div>
+					</div> */}
 
-					<br></br>
-					<div className="text-emphasis">PR Coordinator | Women in Neuroscience</div>
-					<ul className="">
-						<li>
-							Organize and promote club events, including mentorship matching between undergraduate and
-							graduate students and general body meetings{" "}
-						</li>
-						<li>
-							Maintain club&apos;s social media presence and communicate with other clubs to plan joint
-							events{" "}
-						</li>
-					</ul>
-
-					<br></br>
+					{/* <br></br>
 					<div className="text-emphasis">Wizards Tutor | Boston University Community Service Center</div>
 					<ul className="">
 						<li>
@@ -74,7 +61,7 @@ export default function Education() {
 							Wrote for the nonprofit&apos;s Boston University chapter about women and minorities in STEM
 							being affected by impostor syndrome{" "}
 						</li>
-					</ul>
+					</ul> */}
 				</div>
 			</div>
 		</div>
