@@ -1,5 +1,6 @@
 import React from "react";
 import ProjectCard from "./ProjectCard";
+import ProjectCardFigma from "./ProjectCardFigma";
 import easier1 from "/public/easierrecipe1.png";
 import easier2 from "/public/easierrecipe2.png";
 import culinary1 from "/public/culinarycommunity1.png";
@@ -45,6 +46,20 @@ export default function Projects() {
 					pic1alt={"The home page of Pikmin Progress Tracker"}
 					pic2={pikmin2}
 					pic2alt={"The home page of Pikmin Progress Tracker with some pikmin selected"}
+				/>
+
+				<ProjectCardFigma
+					title={"ExploRx - Tech For Change Hackathon 2024"}
+					role={"UI/UX Designer"}
+					githubRepo={""}
+					deployment={""}
+					skills={["React", "MongoDB", "TypeScript", "Figma"]}
+					figmaEmbed={
+						"https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FoVRvMEUNaY66024w0ZwwqN%2FTFC-Hackathon%3Ftype%3Ddesign%26node-id%3D2-3%26t%3D7c3NUu6BrWcb3huc-1%26scaling%3Dscale-down%26page-id%3D0%253A1%26starting-point-node-id%3D2%253A3%26mode%3Ddesign"
+					}
+					description={[
+						"Using Figma, designed mobile app for aggregating and comparing prescription and medical procedure costs with various insurance plans",
+					]}
 				/>
 
 				<ProjectCard

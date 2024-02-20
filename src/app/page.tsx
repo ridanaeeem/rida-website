@@ -65,7 +65,7 @@ export default function Home() {
 				<div className="md:m-0 w-full relative md:ml-10 md:mt-0 flex flex-col md:flex-row">
 					<div className="md:w-2/5 h-80"></div>
 					<div className="flex flex-col justify-center text-left md:w-3/5">
-						<div className="absolute top-0 mt-40 md:mt-5">
+						<div className="absolute top-0 mt-40 md:mt-5 text-xl">
 							Welcome to my website! I&apos;m a graduating senior studying Neuroscience and Computer
 							Science at Boston University. Scroll through to learn more about my{" "}
 							<div className="hover-underline-animation">
