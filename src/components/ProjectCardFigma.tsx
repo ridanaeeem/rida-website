@@ -29,7 +29,7 @@ export default function ProjectCard({
 				<SkillList skills={skills} />
 				<div className="my-2">
 					<iframe
-						className="h-[650px] md:h-[600px] lg:h-[850px]"
+						className="h-[650px] md:h-[450px] 3xl:h-[750px]"
 						width="100%"
 						src={figmaEmbed}
 						allowFullScreen
