@@ -69,15 +69,21 @@ export default function Home() {
 							Welcome to my website! I&apos;m a graduating senior studying Neuroscience and Computer
 							Science at Boston University. Scroll through to learn more about my{" "}
 							<div className="hover-underline-animation">
-								<Link href="#education">education</Link>
+								<Link className="text-xl" href="#education">
+									education
+								</Link>
 							</div>
 							,{" "}
 							<div className="hover-underline-animation">
-								<Link href="#experiences">experience</Link>
+								<Link className="text-xl" href="#experiences">
+									experience
+								</Link>
 							</div>
 							, and{" "}
 							<div className="hover-underline-animation">
-								<Link href="#projects">projects!</Link>
+								<Link className="text-xl" href="#projects">
+									projects!
+								</Link>
 							</div>
 							<br></br>
 							<br></br>

@@ -27,8 +27,13 @@ export default function ProjectCard({
 					<div className="">{role}</div>
 				</div>
 				<SkillList skills={skills} />
-				<div className="flex justify-between my-2">
-					<iframe width="800" height="450" src={figmaEmbed} allowFullScreen />
+				<div className="my-2">
+					<iframe
+						className="h-[650px] md:h-[600px] lg:h-[850px]"
+						width="100%"
+						src={figmaEmbed}
+						allowFullScreen
+					/>
 				</div>
 				<ul className="flex flex-wrap">
 					{description.map((item, index) => (
