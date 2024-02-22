@@ -85,6 +85,10 @@ body {
 	font-size: calc(20px + 5vw);
 }
 
+/* .project-card a:hover .card-title {
+	color: white;
+} */
+
 @media only screen and (max-width: 767px) {
 	.box {
 		color: var(--emphasis);

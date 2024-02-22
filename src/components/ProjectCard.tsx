@@ -26,9 +26,9 @@ export default function ProjectCard({
 	pic2alt: string;
 }) {
 	return (
-		<div className="border-transparent border-2 p-4 hover:bg-gradient-radial from-black to-dgreen hover:border-dgreen rounded-xl">
+		<div className="project-card border-transparent border-2 p-4 hover:bg-gradient-radial from-black to-dgreen hover:border-dgreen rounded-xl">
 			<a href={deployment ? deployment : githubRepo} target="_blank" rel="noopener noreferrer">
-				<div className="text-emphasis text-xl">
+				<div className="card-title text-emphasis text-xl">
 					{title}
 					<div className="">{role}</div>
 				</div>

@@ -8,8 +8,8 @@ export default function Education() {
 				<div className="box subheading text-center py-5">Education</div>
 				<div className="">
 					<div>
-						My degree has allowed me to gain a truly interdisplinary understanding of both Neuroscience and
-						Computer Science, with coursework ranging from biology, chemistry, and physics, to the
+						My degree has allowed me to gain a truly interdisciplinary understanding of both Neuroscience
+						and Computer Science, with coursework ranging from biology, chemistry, and physics, to the
 						principles of computational modeling and computing.
 					</div>
 					<br></br>
@@ -28,8 +28,8 @@ export default function Education() {
 					</div>
 					<ul className="">
 						<li>
-							Data Structures, Software Engineering, Web Application Development, Introduction to
-							Artifical Intelligence
+							Object Oriented Programming, Data Structures, Software Engineering, Software Engineering
+							Practicum, Web Application Development, Introduction to Artifical Intelligence
 						</li>
 						<li>Discrete Math, Linear Algebra, Multivariate Calculus, Differential Equations</li>
 						<li>
