@@ -36,7 +36,7 @@ export default function Home() {
 	// determine what section of page to highlight
 	let highlightNav = "";
 	if (projVisible) highlightNav = "Projects";
-	else if (expVisible) highlightNav = "Experiences";
+	else if (expVisible) highlightNav = "Experience";
 	else if (eduVisible) highlightNav = "Education";
 
 	return (
@@ -75,7 +75,7 @@ export default function Home() {
 							</div>
 							,{" "}
 							<div className="hover-underline-animation">
-								<Link className="text-xl" href="#experiences">
+								<Link className="text-xl" href="#experience">
 									experience
 								</Link>
 							</div>
@@ -101,7 +101,7 @@ export default function Home() {
 						<div id="education" ref={educationRef}>
 							<Education></Education>
 						</div>
-						<div id="experiences" ref={experiencesRef}>
+						<div id="experience" ref={experiencesRef}>
 							<Experiences></Experiences>
 						</div>
 						<div id="projects" ref={projectsRef}>

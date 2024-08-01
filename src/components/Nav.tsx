@@ -17,7 +17,7 @@ export default function Nav({ highlightNav }: { highlightNav: string }) {
 	return (
 		<nav className="flex md:flex-col justify-between text-xl">
 			<NavLink heading="Education"></NavLink>
-			<NavLink heading="Experiences"></NavLink>
+			<NavLink heading="Experience"></NavLink>
 			<NavLink heading="Projects"></NavLink>
 		</nav>
 	);

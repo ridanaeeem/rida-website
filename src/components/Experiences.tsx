@@ -7,7 +7,7 @@ export default function Experiences() {
 	return (
 		<div>
 			<div className="flex flex-col justify-center">
-				<div className="box subheading text-center py-5">Experiences</div>
+				<div className="box subheading text-center py-5">Experience</div>
 				<div className="">
 					<ExperienceCard
 						job={"Data Engineering Intern"}
