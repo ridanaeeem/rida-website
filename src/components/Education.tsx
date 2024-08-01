@@ -9,8 +9,8 @@ export default function Education() {
 				<div className="">
 					<div>
 						My degree has allowed me to gain a truly interdisciplinary understanding of both Neuroscience
-						and Computer Science, with coursework ranging from biology, chemistry, and physics, to the
-						principles of computational modeling and computing.
+						and Computer Science, providing me with a unique mindset with which to approach and solve
+						problems.
 					</div>
 					<br></br>
 
@@ -19,7 +19,7 @@ export default function Education() {
 					</div>
 					<ul className="">
 						<li>B.A. Neuroscience, minor Computer Science</li>
-						<li>GPA: 3.73</li>
+						<li>GPA: 3.75</li>
 					</ul>
 					<br></br>
 
