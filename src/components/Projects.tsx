@@ -15,6 +15,8 @@ import tetris1 from "/public/tetrisGameplay.png";
 import tetris2 from "/public/tetrisLearningCurve.png";
 import arduino1 from "/public/arduinoTracking.png";
 import arduino2 from "/public/arduinoPOC.png";
+import ridaPhotos from "/public/ridaphotos.png";
+import ridaPhotos2 from "/public/ridaphotos2.png";
 
 export default function Projects() {
 	return (
@@ -40,6 +42,21 @@ export default function Projects() {
 				/>
 
 				<ProjectCard
+					title={"Pikmin Progress Tracker"}
+					role={"Full Stack Developer"}
+					githubRepo={"https://github.com/ridanaeeem/pikmin-progress-tracker"}
+					deployment={"https://pikmin-progress-tracker.vercel.app/"}
+					skills={["React", "TypeScript", "Next.js", "Tailwind"]}
+					description={[
+						"Created a React application using TypeScript and Next.js to locally track user progress in the mobile game Pikmin Bloom, with features for data visualization",
+					]}
+					pic1={pikmin1}
+					pic1alt={"The home page of Pikmin Progress Tracker"}
+					pic2={pikmin2}
+					pic2alt={"The home page of Pikmin Progress Tracker with some pikmin selected"}
+				/>
+
+				<ProjectCard
 					title={"Easier Recipe"}
 					role={"Full Stack Developer"}
 					githubRepo={"https://github.com/ridanaeeem/easier-recipe"}
@@ -57,19 +74,18 @@ export default function Projects() {
 				/>
 
 				<ProjectCard
-					title={"Pikmin Progress Tracker"}
+					title={"Photography Portfolio"}
 					role={"Full Stack Developer"}
-					githubRepo={"https://github.com/ridanaeeem/pikmin-progress-tracker"}
-					deployment={"https://pikmin-progress-tracker.vercel.app/"}
+					githubRepo={"https://github.com/ridanaeeem/rida-photos"}
+					deployment={"https://rida-photos.vercel.app/"}
 					skills={["React", "TypeScript", "Next.js", "Tailwind"]}
 					description={[
-						"Created a React application using TypeScript and Next.js to locally track user progress in the mobile game Pikmin Bloom, with features for data visualization",
-						"Currently implementing SQL database storage and user sign-in for cross-device use",
+						"Designed in Figma and proceeded to develop a Next.js application for showcasing photography portfolio, with main page going through a curated selection of photos and collections page displaying several specific collections of photos",
 					]}
-					pic1={pikmin1}
-					pic1alt={"The home page of Pikmin Progress Tracker"}
-					pic2={pikmin2}
-					pic2alt={"The home page of Pikmin Progress Tracker with some pikmin selected"}
+					pic1={ridaPhotos}
+					pic1alt={"The home page of Rida Naeem Photography"}
+					pic2={ridaPhotos2}
+					pic2alt={"The collections page of Rida Naeem Photography"}
 				/>
 
 				<ProjectCard

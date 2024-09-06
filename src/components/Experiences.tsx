@@ -12,13 +12,15 @@ export default function Experiences() {
 					<ExperienceCard
 						job={"Data Engineering Intern"}
 						company={"DOE Office of Clean Energy Demonstrations"}
-						link={""}
-						timeframe={"Jun 2024 - present"}
+						link={"https://www.energy.gov/oced/office-clean-energy-demonstrations"}
+						timeframe={"Jun 2024 - Aug 2024"}
 						skills={["Python", "SAS", "Jupyter Notebook", "Privacy", "Anonymization"]}
 						description={[
 							"Selected as part of DOE Scholars Program to aid Science, Engineering, Analysis, and Data division with executing data anonymization and privacy goals",
-							"Researched and implemented advanced data anonymization techniques (k-anonymization, l-diversity, t-closeness) on large datasets via Python (pandas, NumPy) for office reference",
-							"Presented research and code on various techniques, advising office on best practices and use cases ",
+							"Researched and implemented advanced data anonymization techniques (k-anonymization, ldiversity, t-closeness) on large datasets via Python (pandas, NumPy), decreasing re-identification risk",
+							"Applied several machine learning algorithms to data in SAS Viya and Python (scikit-learn, xgboost) to study re-identification capabilities of various algorithms on anonymized data",
+							"Visualized anonymized data using Tableau, ArcGIS, and Python (matplotlib, Seaborn) to present findings on anonymization techniques and advise senior staff on best practices",
+							"Created GitHub pages site using Jupyter Book for organization to view code and commentary",
 							"Gained experience in data management processes for a multi-billion-dollar project portfolio",
 						]}
 					/>
