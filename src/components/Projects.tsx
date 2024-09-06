@@ -15,8 +15,8 @@ import tetris1 from "/public/tetrisGameplay.png";
 import tetris2 from "/public/tetrisLearningCurve.png";
 import arduino1 from "/public/arduinoTracking.png";
 import arduino2 from "/public/arduinoPOC.png";
-import ridaPhotos from "/public/ridaphotos.png";
-import ridaPhotos2 from "/public/ridaphotos2.png";
+import ridaPhotos from "/public/ridaPhotos.png";
+import ridaPhotos2 from "/public/ridaPhotos2.png";
 
 export default function Projects() {
 	return (
