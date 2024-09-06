@@ -81,6 +81,7 @@ export default function Projects() {
 					skills={["React", "TypeScript", "Next.js", "Tailwind"]}
 					description={[
 						"Designed in Figma and proceeded to develop a Next.js application for showcasing photography portfolio, with main page going through a curated selection of photos and collections page displaying several specific collections of photos",
+						"Created filtering system for collections page to allow users to view photos by tags assigned to each photo",
 					]}
 					pic1={ridaPhotos}
 					pic1alt={"The home page of Rida Naeem Photography"}
