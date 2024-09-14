@@ -89,7 +89,7 @@ export default function Home() {
 							<br></br>
 							Outside of my academics and work, I really enjoy finding opportunities to embrace my
 							creative side, whether that be through playing the guitar, taking photos, or painting! Check
-							out mmy creative portfolio{" "}
+							out my creative portfolio{" "}
 							<div className="hover-underline-animation">
 								<a href="https://rida-photos.vercel.app/" className="text-xl">
 									here
